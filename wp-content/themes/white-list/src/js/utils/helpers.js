@@ -407,3 +407,17 @@ export const getCookie = (name) => {
     }
     return null;
 };
+
+export const primaryMenu = () => {
+    const toggleMainMenuBtn = document.querySelectorAll('.js-toggle-menu-btn');
+
+    toggleMainMenuBtn && toggleMainMenuBtn.forEach(item => {
+        item.addEventListener('click', (e) => {
+            const toggleElement = document.querySelectorAll('.js-toggle-menu-elem')
+
+            toggleElement && toggleElement.forEach(el => {
+                el.classList.toggle('menu-opened');
+            })
+        });
+    })
+}

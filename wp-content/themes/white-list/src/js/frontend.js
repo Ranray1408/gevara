@@ -1,4 +1,5 @@
 import { FormValidator } from "./components/FormValidator";
+import { primaryMenu } from "./utils/helpers";
 import Popup from "./utils/popup-window";
 
 // Styles entry
@@ -10,6 +11,7 @@ const onLoad = () => {
 
 	popup.init();
 
+	primaryMenu();
 };
 
 window.document.addEventListener('DOMContentLoaded', onLoad);

@@ -8,8 +8,4 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
-        <div class="container">
-            <a class="title" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-        </div>
-    </header>
+  <?php echo esc_html( get_template_part( 'src/template-parts/custom', 'header' ) ); ?>

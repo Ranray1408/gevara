@@ -1,6 +1,34 @@
 <?php
 
 /**
+ * Create Theme General Settings
+ *
+ * @package acf/settings
+ */
+
+if (function_exists('acf_add_options_page')) {
+
+    $parent = acf_add_options_page(
+        array(
+            'page_title' => 'Theme General Settings',
+            'menu_title' => 'Theme Settings',
+            'menu_slug'  => 'theme-general-settings',
+            'post_id'    => 'theme-general-settings',
+            'capability' => 'edit_posts',
+            'redirect'   => false,
+        )
+    );
+}
+
+// Specify which menu location will be used in theme.
+register_nav_menus(
+    array(
+        'primary_menu' => __('Primary Menu', 'wp-rock'),
+        'footer_menu'  => __('Footer Menu', 'wp-rock'),
+    )
+);
+
+/**
  * Initial setup actions for site
  *
  * @package WP-rock
@@ -29,6 +57,6 @@ if (function_exists('get_fields')) {
  *
  * @return mixed|null
  */
-function get_field_value( $data_arr, $key ) {
-    return ( isset( $data_arr[ $key ] ) ) ? $data_arr[ $key ] : null;
+function get_field_value($data_arr, $key) {
+    return (isset($data_arr[$key])) ? $data_arr[$key] : null;
 }
