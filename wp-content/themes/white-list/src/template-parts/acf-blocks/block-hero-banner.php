@@ -87,5 +87,4 @@ $download_button = get_field_value($fields, 'download_button');
 			</div>
 		</div>
 	</div>
-	</div>
 </section>
