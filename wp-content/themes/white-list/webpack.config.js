@@ -21,7 +21,6 @@ module.exports = (env) => {
         devtool: isDevelopment ? 'source-map' : false,
         module: {
             rules: [
-                // TypeScript/JavaScript rules
                 {
                     test: /\.tsx?$/,
                     exclude: /node_modules/,
@@ -34,7 +33,14 @@ module.exports = (env) => {
                         },
                     ],
                 },
-                // SCSS/CSS rules
+                {
+                    test: /\.css$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        'css-loader',
+                        'postcss-loader'
+                    ]
+                },
                 {
                     test: /\.s[ac]ss$/i,
                     exclude: /node_modules/,

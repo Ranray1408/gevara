@@ -60,3 +60,18 @@ if (function_exists('get_fields')) {
 function get_field_value($data_arr, $key) {
     return (isset($data_arr[$key])) ? $data_arr[$key] : null;
 }
+
+// Add title tag support.
+add_theme_support('title-tag');
+
+// Add default posts and comments RSS feed links to head.
+add_theme_support('automatic-feed-links');
+
+// Enable support for Post Thumbnails on posts and pages.
+add_theme_support('post-thumbnails');
+
+// Add shortcode support in text widgets.
+add_filter('widget_text', 'do_shortcode');
+
+// Set  Revisions Config to Zero.
+add_filter('wp_revisions_to_keep', '__return_zero');

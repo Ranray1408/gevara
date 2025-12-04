@@ -30,6 +30,9 @@ class WP_Rock_Blocks {
         'block-horizontal-banner' => array(
             'title'      => 'Block - Horizontal banner',
         ),
+        'block-solutions' => array(
+            'title'      => 'Block - Solutions',
+        ),
     );
 
     /**

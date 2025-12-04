@@ -119,7 +119,9 @@
     "SCSS",
     "WP-Pot"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^12.0.3"
+  },
   "browserslist": [
     "defaults",
     "> 0.5%",

@@ -43,6 +43,7 @@ a {
 
 a,
 button {
+    cursor: pointer;
     transition-duration: 0.2s;
     transition-property: background-color, color, border-color, box-shadow, opacity, linear-gradient;
     transition-timing-function: ease-in-out;
@@ -64,6 +65,26 @@ button {
 
     &:active {
         transform: scale(1.02);
+    }
+}
+
+.bg-hover-effect {
+    @media (hover: hover) {
+        &:hover {
+            background-color: #408C7F;
+
+            svg path {
+                stroke: #fff;
+            }
+        }
+    }
+
+    &:active {
+        background-color: #408C7F;
+
+        svg path {
+            stroke: #fff;
+        }
     }
 }
 
@@ -161,7 +182,9 @@ button {
     color: #f2f2f2;
     z-index: 1;
 
-
+    @media screen and (max-width: 991px) {
+        padding: 16px 18px;
+    }
 
     @media (hover: hover) {
         &:hover {
@@ -174,6 +197,47 @@ button {
     &:active {
         background-color: #408C7F;
         border: 2px solid #408C7F;
+    }
+
+}
+
+.grey-tranparent-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    gap: 8px;
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 8px;
+
+    border: 2px solid #2f2f2f;
+    color: #2f2f2f;
+    z-index: 1;
+
+    @media screen and (max-width: 991px) {
+        padding: 16px 18px;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            color: #f2f2f2;
+            background-color: #408C7F;
+            border: 2px solid #408C7F;
+
+            svg path {
+                stroke: #fff;
+            }
+        }
+    }
+
+    &:active {
+        background-color: #408C7F;
+        border: 2px solid #408C7F;
+
+        svg path {
+            stroke: #fff;
+        }
     }
 
 }
@@ -291,4 +355,20 @@ input[type="text"] {
     &:focus {
         outline: none;
     }
+}
+
+.slider-button-prev,
+.slider-button-next {
+    background-color: transparent;
+    width: 56px;
+    height: 56px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: solid 2px #2f2f2f;
+
+
 }
