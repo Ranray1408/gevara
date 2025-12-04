@@ -27,6 +27,9 @@ class WP_Rock_Blocks {
         'block-category' => array(
             'title'      => 'Block - Category',
         ),
+        'block-horizontal-banner' => array(
+            'title'      => 'Block - Horizontal banner',
+        ),
     );
 
     /**

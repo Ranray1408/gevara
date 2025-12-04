@@ -1,0 +1,65 @@
+.horizontal-banner {
+	padding-top: 137px;
+	padding-bottom: 137px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@media screen and (max-width: 670px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	&__inner-container {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width: 1140px) {
+			flex-direction: column;
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		max-width: 306px;
+		width: 100%;
+		padding-right: 54px;
+
+		@media screen and (max-width: 1140px) {
+			padding-right: 0;
+			padding-bottom: 24px;
+		}
+	}
+
+	&__description {
+		font-family: $primary-font;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -1px;
+		color: #f2f2f2;
+		padding-left: 48px;
+		border-left: 1px solid #fff;
+
+		@media screen and (max-width: 1140px) {
+			border-left: none;
+			padding-left: 0;
+			padding-top: 24px;
+			border-top: 1px solid #fff;
+		}
+
+		@media screen and (max-width: 670px) {
+			font-size: 20px;
+		}
+	}
+}

@@ -222,8 +222,8 @@ img {
 .container {
     width: 100%;
     max-width: 1680px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
     position: relative;
 
@@ -253,8 +253,6 @@ img {
 
     @media screen and (max-width: 576px) {
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 }
 
