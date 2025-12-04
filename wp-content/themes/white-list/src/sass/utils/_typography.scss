@@ -33,6 +33,22 @@ h1 {
 	}
 }
 
+h2 {
+	font-size: 56px;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 46px;
+	}
+
+	@media screen and (max-width: 991px) {
+		font-size: 38px;
+	}
+
+	@media screen and (max-width: 470px) {
+		font-size: 32px;
+	}
+}
+
 h3 {
 	font-size: 32px;
 }

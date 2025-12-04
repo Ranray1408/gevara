@@ -53,6 +53,20 @@ button {
     }
 }
 
+.scale-hover-effect {
+    transition: transform 0.3s ease-in-out;
+
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    &:active {
+        transform: scale(1.02);
+    }
+}
+
 .square-wrapper {
     width: 48px;
     height: 48px;

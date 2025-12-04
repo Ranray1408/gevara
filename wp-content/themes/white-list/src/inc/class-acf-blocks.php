@@ -24,6 +24,9 @@ class WP_Rock_Blocks {
         'block-advantages' => array(
             'title'      => 'Block - Advantages',
         ),
+        'block-category' => array(
+            'title'      => 'Block - Category',
+        ),
     );
 
     /**
