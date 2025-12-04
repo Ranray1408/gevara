@@ -18,8 +18,8 @@ class WP_Rock_Blocks {
      * @var array[]
      */
     public $blocks = array(
-        'block-donat-section' => array(
-            'title'      => 'Block - Donat form',
+        'block-hero-banner' => array(
+            'title'      => 'Block - Hero banner',
         ),
     );
 

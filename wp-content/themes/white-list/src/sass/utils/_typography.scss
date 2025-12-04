@@ -15,12 +15,16 @@ h1 {
 	color: #f2f2f2;
 	letter-spacing: -1px;
 
+	@media screen and (max-width: 1200px) {
+		font-size: 56px;
+	}
+
 	@media screen and (max-width: 991px) {
-		font-size: 34px;
+		font-size: 42px;
 	}
 
 	@media screen and (max-width: 470px) {
-		font-size: 30px;
+		font-size: 32px;
 	}
 }
 

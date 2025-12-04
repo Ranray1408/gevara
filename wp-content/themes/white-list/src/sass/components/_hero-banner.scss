@@ -1,0 +1,59 @@
+.hero-banner {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding-top: 86px;
+	padding-bottom: 67px;
+
+
+	@media screen and (max-width: 768px) {
+		padding-top: 77px;
+		padding-bottom: 73px;
+	}
+
+	&__inner-container {
+		max-width: 760px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-bottom: 48px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__description {
+		max-width: 460px;
+		font-family: $second-font;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -1px;
+		color: #f2f2f2;
+		min-height: 150px;
+		margin-bottom: 100px;
+
+		@media screen and (max-width: 768px) {
+			min-height: 150px;
+			font-size: 16px;
+		}
+	}
+
+	&__button-wrapper {
+		display: flex;
+		gap: 24px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
+	&__contact-us-button {
+		height: 56px;
+	}
+}
