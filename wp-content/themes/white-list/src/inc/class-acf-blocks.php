@@ -39,6 +39,9 @@ class WP_Rock_Blocks {
         'block-our-clients' => array(
             'title'      => 'Block - Our clients',
         ),
+        'block-reviews' => array(
+            'title'      => 'Block - Reviews',
+        ),
     );
 
     /**

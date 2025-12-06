@@ -1,7 +1,7 @@
 import { FormValidator } from "./components/FormValidator";
 import { primaryMenu } from "./utils/helpers";
 import Popup from "./utils/popup-window";
-import { initSolutionsSlider } from "./utils/sliders";
+import { initReviewsSlider, initSolutionsSlider } from "./utils/sliders";
 
 // Styles entry
 export { }
@@ -17,7 +17,7 @@ const onLoad = () => {
 	primaryMenu();
 
 	initSolutionsSlider();
-
+	initReviewsSlider();
 
 };
 
