@@ -46,6 +46,10 @@
 		border-radius: 20px;
 		padding: 48px;
 		background-color: #eef7f5;
+
+		@media screen and (max-width: 768px) {
+			padding: 24px;
+		}
 	}
 
 	&__review-item-logo {
