@@ -6,8 +6,8 @@
  * @since   4.4.0
  */
 
-$cpt_title      = 'Products';
-$cpt_category   = 'products_cat';
+$cpt_title      = 'Каталог';
+$cpt_category   = 'products-category';
 $cpt_slug       = 'products';
 
 // TODO: Don't forget to change {CPT_CATEGORY} and {cpt_title} and {CPT_SLUG}.
