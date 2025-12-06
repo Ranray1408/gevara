@@ -10,11 +10,15 @@ export { }
 const onLoad = () => {
 	const popup = new Popup();
 
+	new FormValidator('.wpcf7-form');
+
 	popup.init();
 
 	primaryMenu();
 
 	initSolutionsSlider();
+
+
 };
 
 window.document.addEventListener('DOMContentLoaded', onLoad);
