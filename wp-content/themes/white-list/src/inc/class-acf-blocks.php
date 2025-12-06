@@ -36,6 +36,9 @@ class WP_Rock_Blocks {
         'block-contact-us' => array(
             'title'      => 'Block - Contact us',
         ),
+        'block-our-clients' => array(
+            'title'      => 'Block - Our clients',
+        ),
     );
 
     /**

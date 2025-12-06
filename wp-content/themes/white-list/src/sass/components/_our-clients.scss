@@ -1,0 +1,36 @@
+.our-clients {
+	padding-top: 64px;
+	padding-bottom: 64px;
+
+	@media screen and (max-width: 670px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	&__title {
+		margin-bottom: 48px;
+
+		@media screen and (max-width: 670px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__logos-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 30px 18px;
+
+		@media screen and (max-width: 1140px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@media screen and (max-width: 991px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@media screen and (max-width: 670px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px 24px;
+		}
+	}
+}
