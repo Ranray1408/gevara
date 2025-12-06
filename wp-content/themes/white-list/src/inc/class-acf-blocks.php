@@ -42,6 +42,9 @@ class WP_Rock_Blocks {
         'block-reviews' => array(
             'title'      => 'Block - Reviews',
         ),
+        'block-about-us' => array(
+            'title'      => 'Block - About us',
+        ),
     );
 
     /**
