@@ -1,0 +1,161 @@
+.sidebar {
+	width: 100%;
+	max-width: 260px;
+
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
+
+	&__popup-button {
+		@extend .black-bg-hover-effect;
+
+		display: none;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		font-weight: 700;
+		padding: 14px 16px;
+		border-radius: 8px;
+		border: solid 2px #2f2f2f;
+
+		@media screen and (max-width: 991px) {
+			display: flex;
+		}
+	}
+
+	&__title {
+		font-family: $primary-font;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #2f2f2f;
+		margin-bottom: 24px;
+	}
+
+	&__items-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		border-bottom: solid 1px #b9b9b9;
+		padding: 0 16px;
+
+
+		&.active {
+			border-bottom: solid 1px transparent;
+			background-color: #fff;
+
+			.sidebar__item-children {
+				max-height: 100%;
+			}
+
+			.cross {
+				&:after {
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+
+	&__item-icon {
+		width: 24px;
+		height: 24px;
+		flex-shrink: 0;
+
+		path {
+			fill: #727272;
+		}
+	}
+
+	&__item-link {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 8px;
+		font-family: $second-font;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #2f2f2f;
+		padding: 8px 0;
+
+		.cross {
+			position: relative;
+			width: 24px;
+			height: 24px;
+			margin-left: auto;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 14px;
+				height: 2px;
+				background-color: #2f2f2f;
+				transform-origin: center;
+				transform: translate(-50%, -50%);
+				transition: translate 0.3s ease;
+			}
+
+			&:after {
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+		}
+	}
+
+	&__item-children {
+		display: flex;
+		flex-direction: column;
+		font-family: $primary-font;
+		font-size: 14px;
+		line-height: 1.14;
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	&__item-children-link {
+		padding: 12px 0;
+
+		&.active {
+			color: #408C7F;
+		}
+	}
+}
+
+#sidebar-popup {
+
+	.popup-close {
+		width: 48px;
+		height: 48px;
+		flex-grow: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		padding: 12px 16px;
+		border-radius: 8px;
+		background-color: #fff;
+	}
+
+	.popup-wrapper {
+		margin: 0;
+		width: 100% !important;
+		height: 100%;
+		padding: 26px 20px;
+		background-color: #eef7f5;
+	}
+
+	.sidebar {
+		max-width: 100%;
+
+		@media screen and (max-width: 991px) {
+			display: block;
+		}
+	}
+}

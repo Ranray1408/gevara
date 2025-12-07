@@ -7,7 +7,8 @@ export interface InputField {
 
 // Main form validator class
 export class FormValidator {
-	private form: HTMLFormElement;
+	private form!: HTMLFormElement;
+
 	public inputs: Record<string, InputField> = {};
 	private submitBtn: HTMLButtonElement | HTMLInputElement | null = null;
 
@@ -21,7 +22,7 @@ export class FormValidator {
 		const foundForm = document.querySelector<HTMLFormElement>(formSelector);
 
 		if (!foundForm) {
-			throw new Error(`Form not found: ${formSelector}`);
+			return;
 		}
 
 		this.form = foundForm;
