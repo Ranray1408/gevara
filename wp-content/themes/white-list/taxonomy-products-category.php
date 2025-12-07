@@ -20,11 +20,8 @@ $category_page_text = get_field_value($global_options, 'category_page_text');
 <div class="category-page">
 	<div class="category-page__banner" style="background-image: url( <?php echo $banner_image; ?>)">
 		<div class="container  category-page__container">
-			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-				<?php if (function_exists('bcn_display')) {
-					bcn_display();
-				} ?>
-			</div>
+			<?php echo get_template_part('src/template-parts/breadcrumbs'); ?>
+
 			<?php
 			if ($current_term->name) {
 				echo '<h1 class="category-page__title">' . $current_term->name . '</h1>';

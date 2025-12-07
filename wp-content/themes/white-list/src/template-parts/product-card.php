@@ -9,6 +9,7 @@ if (empty($post_id)) return;
 
 $thumb = get_the_post_thumbnail_url($post_id);
 $title = get_the_title($post_id);
+$post_link = get_permalink($post_id);
 $excerpt = get_the_excerpt($post_id);
 
 $pdf_file = get_field('pdf_file', $post_id);
@@ -33,24 +34,28 @@ $pdf_svg = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="h
 ?>
 
 <div class="product-card">
+	<a href="<?php echo $post_link; ?>" class="product-card">
+		<?php
+		if (!empty($thumb)) {
+			echo '<figure class="product-card__thumb">
+					<img src="' . $thumb . '" alt="post thumb">
+				</figure>';
+		}
+
+		echo '<h3 class="product-card__title">' . $title . '</h3>';
+
+		if (!empty($excerpt)) {
+			echo '<p class="product-card__execrpt">' . $excerpt . '</p>';
+		}
+		?>
+
+	</a>
 	<?php
-	if (!empty($thumb)) {
-		echo '<figure class="product-card__thumb">
-				<img src="' . $thumb . '" alt="post thumb">
-			</figure>';
-	}
-
-	echo '<h3 class="product-card__title">' . $title . '</h3>';
-
-	if (!empty($excerpt)) {
-		echo '<p class="product-card__execrpt">' . $excerpt . '</p>';
-	}
-
 	if (!empty($download_btn_text) && !empty($pdf_file)) {
 		echo '<a href="' . $pdf_file . '" download class="product-card__download-btn">
-					' . $pdf_svg . '
-					' . $download_btn_text . '
-				</a>';
+						' . $pdf_svg . '
+						' . $download_btn_text . '
+					</a>';
 	}
 	?>
 </div>
