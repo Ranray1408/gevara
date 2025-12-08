@@ -27,8 +27,7 @@ if ($pdf_file) {
 			<?php echo get_template_part('src/template-parts/breadcrumbs'); ?>
 			<h1 class="single-product__title"><?php echo $title; ?></h1>
 		</div>
-	</div>
-	<div class="container">
+
 		<div class="single-product__hero-content">
 			<?php
 			if (!empty($thumb)) {

@@ -61,7 +61,7 @@ input[type="submit"] {
     font-size: 16px;
     display: flex;
     gap: 13px;
-    align-items: center;
+    align-items: flex-start;
 
     .current-item {
         font-weight: 700;
