@@ -6,8 +6,6 @@
  * @since 4.4.0
  */
 
-
-
 $labels = array(
     'name' => __( 'Products categories', 'white-list' ),
     'singular_name' => __( 'Products category', 'white-list' ),

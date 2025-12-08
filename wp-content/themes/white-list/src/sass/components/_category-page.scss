@@ -24,12 +24,13 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		.breadcrumbs {
+			color: #f2f2f2;
+			margin-bottom: 20px;
+		}
 	}
 
-	.breadcrumbs {
-		color: #f2f2f2;
-		margin-bottom: 20px;
-	}
 
 	&__container {
 		position: relative;

@@ -686,3 +686,31 @@ input[type="submit"] {
         gap: 8px;
     }
 }
+
+.share-wrapper {
+    display: flex;
+    align-items: center;
+
+    .share-wrapper-title {
+        font-family: $primary-font;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #2f2f2f;
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .share-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .share-wrapper-inner {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}

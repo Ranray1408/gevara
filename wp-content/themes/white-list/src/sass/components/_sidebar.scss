@@ -19,7 +19,8 @@
 		border: solid 2px #2f2f2f;
 
 		@media screen and (max-width: 991px) {
-			display: flex;
+			display: inline-flex;
+			margin: 0 auto;
 		}
 	}
 

@@ -85,6 +85,13 @@
                 "operator": "==",
                 "value": "products-category"
             }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "solutions-category"
+            }
         ]
     ],
     "menu_order": 0,
@@ -96,5 +103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765050527
+    "modified": 1765219068
 }
