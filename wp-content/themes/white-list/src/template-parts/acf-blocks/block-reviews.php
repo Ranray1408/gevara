@@ -18,12 +18,12 @@ $reviews_repeater = get_field_value($fields, 'reviews_repeater');
 			?>
 
 			<div class="reviews__slider-button-wrapper">
-				<button class="reviews__slider-button js-solutions-slider-prev slider-button-prev bg-hover-effect">
+				<button class="reviews__slider-button js-reviews-slider-prev slider-button-prev bg-hover-effect">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5 12H19M5 12L11 18M5 12L11 6" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
 				</button>
-				<button class="reviews__slider-button js-solutions-slider-next slider-button-next bg-hover-effect">
+				<button class="reviews__slider-button js-reviews-slider-next slider-button-next bg-hover-effect">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5 12H19" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 						<path d="M13 18L19 12" stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

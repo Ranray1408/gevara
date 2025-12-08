@@ -52,8 +52,8 @@ export const initReviewsSlider = () => {
 		},
 		// Navigation arrows
 		navigation: {
-			nextEl: '.js-solutions-slider-next',
-			prevEl: '.js-solutions-slider-prev',
+			nextEl: '.js-reviews-slider-next',
+			prevEl: '.js-reviews-slider-prev',
 		},
 	});
 }
@@ -65,6 +65,7 @@ export const initRelatedSlider = () => {
 
 	const swiper = new Swiper(related, {
 		slidesPerView: 2,
+		modules: [Navigation],
 		breakpoints: {
 			// when window width is >= 320px
 			768: {
@@ -74,6 +75,30 @@ export const initRelatedSlider = () => {
 			1450: {
 				slidesPerView: 4,
 				spaceBetween: 32,
+			}
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.js-category-slider-next',
+			prevEl: '.js-category-slider-prev',
+		},
+	});
+}
+export const initCategorySlider = () => {
+	const category = document.querySelector('.js-category-slider');
+
+	if (!category) return;
+
+	const swiper = new Swiper(category, {
+		slidesPerView: 2.3,
+		spaceBetween: 8,
+		breakpoints: {
+			// when window width is >= 320px
+			768: {
+				slidesPerView: 3.5,
+			},
+			1450: {
+				slidesPerView: 4.5,
 			}
 		},
 	});

@@ -107,54 +107,22 @@ if ($pdf_file) {
 		</div>
 	</div>
 	<!-- Hero banner block END -->
+
 	<!-- Related products -->
-	<div class="single-product__related-block">
-		<div class="container">
-			<h4 class="single-product__related-slider-title">Другие товары из этой категории</h4>
-			<div class="single-product__related-block-slider js-related-slider swiper">
-				<div class="swiper-wrapper">
-					<?php
-					$current_id = get_the_ID();
-					$terms = wp_get_object_terms($current_id, 'products-category', ['fields' => 'ids']);
-
-					if (!empty($terms)) {
-						$args = [
-							'post_type'      => 'products',
-							'tax_query'      => [
-								[
-									'taxonomy' => 'products-category',
-									'field'    => 'term_id',
-									'terms'    => $terms,
-								],
-							],
-							'post__not_in'   => [$current_id],
-							'posts_per_page' => 7,
-						];
-
-						$related_query = new WP_Query($args);
-
-						if ($related_query->have_posts()) {
-							while ($related_query->have_posts()) {
-								$related_query->the_post(); ?>
-								<div class="swiper-slide">
-									<?php
-									echo get_template_part(
-										'src/template-parts/product',
-										'card',
-										['post_id' => get_the_ID()]
-									);
-									?>
-								</div>
-					<?php }
-							wp_reset_postdata();
-						}
-					}
-					?>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php echo get_template_part('src/template-parts/static-related-products'); ?>
 	<!-- Related products END -->
+
+	<!-- Category slider -->
+	<?php echo get_template_part('src/template-parts/static-category-slider'); ?>
+	<!-- Category slider END -->
+
+	<!-- Advantages block -->
+	<?php echo get_template_part('src/template-parts/static-advantages'); ?>
+	<!-- Advantages block END -->
+
+	<!-- Contacts us block -->
+	<?php echo get_template_part('src/template-parts/static-contact-us'); ?>
+	<!-- Contacts us block END -->
 </div>
 
 

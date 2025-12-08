@@ -3,6 +3,19 @@
 	padding-bottom: 96px;
 	background-color: #eef7f5;
 
+	&.category-block-slider {
+		overflow-x: hidden;
+
+		.category-block__slider-button-wrapper {
+			display: flex;
+			gap: 16px;
+
+			@media screen and (max-width: 570px) {
+				display: none;
+			}
+		}
+	}
+
 	@media screen and (max-width: 991px) {
 		padding-top: 40px;
 		padding-bottom: 40px;
