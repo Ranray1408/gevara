@@ -223,4 +223,38 @@
 		max-width: 250px;
 		margin: 0 auto;
 	}
+
+
+
+	// Related block ****************
+
+	&__related-block {
+		background-color: #fff;
+		padding: 64px 0;
+		overflow-x: hidden;
+
+		@media screen and (max-width:768px) {
+			padding: 32px 0;
+		}
+	}
+
+	&__related-slider-title {
+		margin-bottom: 24px;
+
+		@media screen and (max-width:768px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__related-block-slider {
+		@extend .breakout-right;
+		@extend .swiper-same-height;
+
+
+		.swiper-slide:not(:last-child) {
+			padding-right: 16px;
+			border-right: 1px solid #dcdcdc;
+		}
+	}
+
 }

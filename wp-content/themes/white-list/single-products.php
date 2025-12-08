@@ -12,6 +12,7 @@ $thumb = get_the_post_thumbnail_url();
 
 $aside_info = get_field_value($global_options, 'aside_info');
 $document_title = get_field_value($global_options, 'document_title');
+$get_order_button = get_field_value($global_options, 'get_order_button');
 
 $pdf_file = get_field_value($fields, 'pdf_file');
 if ($pdf_file) {
@@ -22,6 +23,7 @@ if ($pdf_file) {
 }
 ?>
 <div class="single-product">
+	<!-- Hero banner block -->
 	<div class="container">
 		<div class="small-container single-product__title-container">
 			<?php echo get_template_part('src/template-parts/breadcrumbs'); ?>
@@ -90,10 +92,69 @@ if ($pdf_file) {
 					</a>
 				</div>
 
-				<a href="" class="single-product__get-order primary-btn">Заказать</a>
+				<?php
+
+				$get_order_button_title = get_field_value($get_order_button, 'title');
+				$get_order_button_url = get_field_value($get_order_button, 'url');
+
+				if (!empty($get_order_button_title) && !empty($get_order_button_url)) {
+					echo '<a href="' . $get_order_button_url . '" class="single-product__get-order primary-btn">
+							' . $get_order_button_title . '
+							</a>';
+				}
+				?>
 			</div>
 		</div>
 	</div>
+	<!-- Hero banner block END -->
+	<!-- Related products -->
+	<div class="single-product__related-block">
+		<div class="container">
+			<h4 class="single-product__related-slider-title">Другие товары из этой категории</h4>
+			<div class="single-product__related-block-slider js-related-slider swiper">
+				<div class="swiper-wrapper">
+					<?php
+					$current_id = get_the_ID();
+					$terms = wp_get_object_terms($current_id, 'products-category', ['fields' => 'ids']);
+
+					if (!empty($terms)) {
+						$args = [
+							'post_type'      => 'products',
+							'tax_query'      => [
+								[
+									'taxonomy' => 'products-category',
+									'field'    => 'term_id',
+									'terms'    => $terms,
+								],
+							],
+							'post__not_in'   => [$current_id],
+							'posts_per_page' => 7,
+						];
+
+						$related_query = new WP_Query($args);
+
+						if ($related_query->have_posts()) {
+							while ($related_query->have_posts()) {
+								$related_query->the_post(); ?>
+								<div class="swiper-slide">
+									<?php
+									echo get_template_part(
+										'src/template-parts/product',
+										'card',
+										['post_id' => get_the_ID()]
+									);
+									?>
+								</div>
+					<?php }
+							wp_reset_postdata();
+						}
+					}
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Related products END -->
 </div>
 
 

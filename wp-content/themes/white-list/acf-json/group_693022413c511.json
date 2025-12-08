@@ -602,6 +602,22 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6936c14525df2",
+            "label": "Get order button",
+            "name": "get_order_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -622,5 +638,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765138654
+    "modified": 1765196214
 }

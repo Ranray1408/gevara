@@ -31,11 +31,11 @@ export const initSolutionsSlider = () => {
 }
 
 export const initReviewsSlider = () => {
-	const solutions = document.querySelector('.js-reviews-slider');
+	const reviews = document.querySelector('.js-reviews-slider');
 
-	if (!solutions) return;
+	if (!reviews) return;
 
-	const swiper = new Swiper(solutions, {
+	const swiper = new Swiper(reviews, {
 		slidesPerView: 1.2,
 		spaceBetween: 16,
 		modules: [Navigation],
@@ -54,6 +54,27 @@ export const initReviewsSlider = () => {
 		navigation: {
 			nextEl: '.js-solutions-slider-next',
 			prevEl: '.js-solutions-slider-prev',
+		},
+	});
+}
+
+export const initRelatedSlider = () => {
+	const related = document.querySelector('.js-related-slider');
+
+	if (!related) return;
+
+	const swiper = new Swiper(related, {
+		slidesPerView: 2,
+		breakpoints: {
+			// when window width is >= 320px
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20
+			},
+			1450: {
+				slidesPerView: 4,
+				spaceBetween: 32,
+			}
 		},
 	});
 }

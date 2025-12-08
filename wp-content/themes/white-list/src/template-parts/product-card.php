@@ -14,6 +14,13 @@ $excerpt = get_the_excerpt($post_id);
 
 $pdf_file = get_field('pdf_file', $post_id);
 
+if ($pdf_file) {
+	$file_url  = $pdf_file['url'];             // URL
+	$file_name = $pdf_file['filename'];        // file name only
+	$file_size_bytes = $pdf_file['filesize'];  // bytes
+	$file_size_mb = round($file_size_bytes / 1024 / 1024, 1); // convert to MB
+}
+
 $download_btn_text = get_field_value($global_options, 'download_btn_text');
 
 $pdf_svg = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +59,7 @@ $pdf_svg = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="h
 	</a>
 	<?php
 	if (!empty($download_btn_text) && !empty($pdf_file)) {
-		echo '<a href="' . $pdf_file . '" download class="product-card__download-btn">
+		echo '<a href="' . $file_url . '" download class="product-card__download-btn">
 						' . $pdf_svg . '
 						' . $download_btn_text . '
 					</a>';
