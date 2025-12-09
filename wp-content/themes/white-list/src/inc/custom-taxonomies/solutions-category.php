@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Taxonomy events category
  *
@@ -9,21 +10,22 @@
 
 
 $labels = array(
-    'name' => __( 'Solutions categories', 'white-list' ),
-    'singular_name' => __( 'Solutions category', 'white-list' ),
-    'search_items' => __( 'Search for Solutions category', 'white-list' ),
-    'all_items' => __( 'All Solutions categories', 'white-list' ),
-    'parent_item' => __( 'Parent Solutions category', 'white-list' ),
-    'parent_item_colon' => __( 'Parent Solutions category:', 'white-list' ),
-    'edit_item' => __( 'Edit Solutions category', 'white-list' ),
-    'update_item' => __( 'Update Solutions category', 'white-list' ),
-    'add_new_item' => __( 'Add New Solutions category', 'white-list' ),
-    'new_item_name' => __( 'New Solutions category', 'white-list' ),
+    'name'                  => __('Решения', 'white-list'),
+    'singular_name'         => __('Решение', 'white-list'),
+    'search_items'          => __('Поиск по решениям', 'white-list'),
+    'all_items'             => __('Все решения', 'white-list'),
+    'parent_item'           => __('Родительская категория решений', 'white-list'),
+    'parent_item_colon'     => __('Родительская категория решений:', 'white-list'),
+    'edit_item'             => __('Редактировать решение', 'white-list'),
+    'update_item'           => __('Обновить решение', 'white-list'),
+    'add_new_item'          => __('Добавить новое решение', 'white-list'),
+    'new_item_name'         => __('Название нового решения', 'white-list'),
 );
+
 
 register_taxonomy(
     'solutions-category',
-    array( 'solutions' ),
+    array('solutions'),
     array(
         'labels' => $labels,
         'public' => true,
@@ -32,7 +34,6 @@ register_taxonomy(
         'show_admin_column' => true,
         'query_var' => true,
         'show_in_rest' => true,
-        'rewrite' => array( 'slug' => 'solutions-category' ),
+        'rewrite' => array('slug' => 'solutions-category'),
     )
 );
-

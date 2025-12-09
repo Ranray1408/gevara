@@ -7,17 +7,18 @@
  */
 
 $labels = array(
-    'name' => __( 'Products categories', 'white-list' ),
-    'singular_name' => __( 'Products category', 'white-list' ),
-    'search_items' => __( 'Search for products category', 'white-list' ),
-    'all_items' => __( 'All Products categories', 'white-list' ),
-    'parent_item' => __( 'Parent Products category', 'white-list' ),
-    'parent_item_colon' => __( 'Parent Products category:', 'white-list' ),
-    'edit_item' => __( 'Edit Products category', 'white-list' ),
-    'update_item' => __( 'Update Products category', 'white-list' ),
-    'add_new_item' => __( 'Add New Products category', 'white-list' ),
-    'new_item_name' => __( 'New Products category', 'white-list' ),
+    'name'                  => __( 'Каталог', 'white-list' ),
+    'singular_name'         => __( 'Продукт', 'white-list' ),
+    'search_items'          => __( 'Поиск по каталогу', 'white-list' ),
+    'all_items'             => __( 'Все продукты', 'white-list' ),
+    'parent_item'           => __( 'Родительская категория', 'white-list' ),
+    'parent_item_colon'     => __( 'Родительская категория:', 'white-list' ),
+    'edit_item'             => __( 'Редактировать продукт', 'white-list' ),
+    'update_item'           => __( 'Обновить продукт', 'white-list' ),
+    'add_new_item'          => __( 'Добавить новый продукт', 'white-list' ),
+    'new_item_name'         => __( 'Название нового продукта', 'white-list' ),
 );
+
 
 register_taxonomy(
     'products-category',

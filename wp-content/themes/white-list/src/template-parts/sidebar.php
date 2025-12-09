@@ -14,23 +14,29 @@ $categories = get_terms([
 
 if (empty($categories) || is_wp_error($categories)) return;
 
-// Detect current term
-$current_term = get_queried_object();
+$object = get_queried_object();
+
+$term_parent_id = 0;
+$term_child_id  = 0;
+$current_term = null;
 
 // If we are on single post – get its first category
-if ($current_term instanceof WP_Post) {
+if ($object instanceof WP_Post) {
 
-	$post_terms = wp_get_post_terms($current_term->ID, $taxonomy);
+	$post_terms = wp_get_post_terms($object->ID, $taxonomy);
 
 	if (!empty($post_terms) && !is_wp_error($post_terms)) {
-		$current_term = $post_terms[0]; // first term
-	} else {
-		$current_term = null;
-	}
-}
+		$first_term = reset($post_terms);
 
-$term_parent_id = $current_term ? ($current_term->parent ?: $current_term->term_id) : 0;
-$term_child_id  = $current_term ? $current_term->term_id : 0;
+		if ($first_term instanceof WP_Term) {
+			$term_parent_id = $first_term->parent ?: $first_term->term_id;
+			$term_child_id  = $first_term->term_id;
+		}
+	}
+} elseif ($object instanceof WP_Term) {
+	$term_parent_id = $object->parent ?: $object->term_id;
+	$term_child_id  = $object->term_id;
+}
 ?>
 
 <?php if (!empty($sidebar_title)) : ?>
@@ -39,7 +45,7 @@ $term_child_id  = $current_term ? $current_term->term_id : 0;
 			<path d="M5 18C5 18.5304 5.21071 19.0391 5.58579 19.4142C5.96086 19.7893 6.46957 20 7 20H19V4H7C6.46957 4 5.96086 4.21071 5.58579 4.58579C5.21071 4.96086 5 5.46957 5 6V18ZM5 18C5 17.4696 5.21071 16.9609 5.58579 16.5858C5.96086 16.2107 6.46957 16 7 16H19M9 8H15"
 				stroke="#2F2F2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		</svg>
-		<?= esc_html($sidebar_title) ?>
+		<?php echo esc_html($sidebar_title) ?>
 	</a>
 <?php endif; ?>
 

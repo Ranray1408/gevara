@@ -40,7 +40,7 @@ $pdf_svg = '<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="h
 			</svg>';
 ?>
 
-<div class="product-card">
+<div class="product-card scale-hover-effect">
 	<a href="<?php echo $post_link; ?>" class="product-card">
 		<?php
 		if (!empty($thumb)) {

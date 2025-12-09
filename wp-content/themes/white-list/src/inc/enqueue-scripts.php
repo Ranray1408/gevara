@@ -33,7 +33,8 @@ function site_scripts() {
 
 
         wp_localize_script('scripts', 'php_vars', [
-            'ajax_url' => admin_url('admin-ajax.php')
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'site_url' => get_site_url(),
         ]);
     }
 }

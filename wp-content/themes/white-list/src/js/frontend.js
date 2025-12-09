@@ -22,6 +22,10 @@ const onLoad = () => {
 	initCategorySlider();
 	initHistorySlider();
 
+	document.addEventListener('wpcf7mailsent', function (event) {
+		window.location.href = php_vars.site_url + '/thank-you';
+	}, false);
+
 };
 
 window.document.addEventListener('DOMContentLoaded', onLoad);

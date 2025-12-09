@@ -1,5 +1,7 @@
 <?php
 
+global $global_options;
+
 $taxonomy = !empty($args['taxonomy']) ? $args['taxonomy'] : 'products-category';
 
 $object = get_queried_object();
@@ -21,6 +23,16 @@ if ($object instanceof WP_Post) {
 	if (!$banner_image) {
 		$parent_term_id = $object->parent ? $object->parent : $object->term_id;
 		$banner_image = get_field('banner_image', 'term_' . $parent_term_id);
+	}
+} elseif (is_archive()) {
+	if(is_post_type_archive('products')) {
+		$title = get_field_value($global_options, 'products_archive_title');
+		$banner_image = get_field_value($global_options, 'products_archive_image');
+	}
+
+	if(is_post_type_archive('solutions')) {
+		$title = get_field_value($global_options, 'solutions_archive_title');
+		$banner_image = get_field_value($global_options, 'solutions_archive_image');
 	}
 }
 

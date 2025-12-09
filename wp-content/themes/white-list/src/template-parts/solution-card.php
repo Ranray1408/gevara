@@ -11,7 +11,7 @@ $title = get_the_title($post_id);
 $link = get_permalink($post_id);
 
 
-echo '<a href="' . $link . '" class="solutions-card__post-item">';
+echo '<a href="' . $link . '" class="solutions-card__post-item scale-hover-effect">';
 
 if (!empty($thumb)) {
 	echo '<figure class="solutions-card__post-thumb">
