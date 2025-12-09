@@ -1,6 +1,6 @@
 import 'swiper/css';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Controller } from 'swiper/modules';
 
 export const initSolutionsSlider = () => {
 	const solutions = document.querySelector('.js-solutions-slider');
@@ -103,3 +103,77 @@ export const initCategorySlider = () => {
 		},
 	});
 }
+export const initHistorySlider = () => {
+	const sliderMain = document.querySelector('.js-our-history-slider');
+	const sliderBtns = document.querySelector('.js-our-history-slider-buttons');
+
+	if (!sliderMain || !sliderBtns) return;
+
+	// main slider
+	const mainSwiper = new Swiper(sliderMain, {
+		slidesPerView: 1.5,
+		spaceBetween: 16,
+		modules: [Controller],
+		autoHeight: true,
+
+		breakpoints: {
+			768: {
+				slidesPerView: 2.5,
+			},
+			1024: {
+				slidesPerView: 3.5,
+				spaceBetween: 20,
+			},
+			1470: {
+				slidesPerView: 4.5,
+				spaceBetween: 61,
+			},
+		},
+	});
+
+	// buttons slider
+	const btnsSwiper = new Swiper(sliderBtns, {
+		slidesPerView: 'auto',
+		spaceBetween: 16	,
+		modules: [Controller],
+		freeMode: true,
+
+		breakpoints: {
+			1200: {
+				slidesPerView: 'auto',
+				spaceBetween: 61,
+			},
+		},
+	});
+
+	// connect sliders
+	mainSwiper.controller.control = btnsSwiper;
+
+	// update active button class
+	const updateActiveButton = (index) => {
+		const buttons = sliderBtns.querySelectorAll('.our-history__slide-btn');
+		buttons.forEach(btn => btn.classList.remove('is-active'));
+		buttons[index]?.classList.add('is-active');
+	};
+
+	// initial highlight
+	updateActiveButton(0);
+
+	// on slide change
+	mainSwiper.on('slideChange', () => {
+		updateActiveButton(mainSwiper.activeIndex);
+
+		// scroll buttons slider to same index
+		btnsSwiper.slideTo(mainSwiper.activeIndex);
+	});
+
+	// click on button
+	const btnElements = sliderBtns.querySelectorAll('.our-history__slide-btn');
+	btnElements.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const index = Number(btn.dataset.index);
+			mainSwiper.slideTo(index);
+			updateActiveButton(index);
+		});
+	});
+};

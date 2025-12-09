@@ -94,6 +94,20 @@ input[type="submit"] {
     }
 }
 
+.white-color-hover-effect {
+    @media (hover: hover) {
+        &:hover {
+            color: #5cc17d;
+            background-color: #fff;
+        }
+    }
+
+    &:active {
+        color: #5cc17d;
+        background-color: #fff;
+    }
+}
+
 .scale-hover-effect {
     transition: transform 0.3s ease-in-out;
 
