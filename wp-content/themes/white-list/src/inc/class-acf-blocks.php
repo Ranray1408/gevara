@@ -51,6 +51,9 @@ class WP_Rock_Blocks {
         'block-numbers-facts' => array(
             'title'      => 'Block - Numbers & Facts',
         ),
+        'block-big-about-us' => array(
+            'title'      => 'Block - Big About us',
+        ),
     );
 
     /**
