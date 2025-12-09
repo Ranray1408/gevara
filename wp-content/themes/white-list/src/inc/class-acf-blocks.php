@@ -54,6 +54,9 @@ class WP_Rock_Blocks {
         'block-big-about-us' => array(
             'title'      => 'Block - Big About us',
         ),
+        'block-category-slider' => array(
+            'title'      => 'Block - Category slider',
+        ),
     );
 
     /**

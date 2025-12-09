@@ -53,6 +53,13 @@
                 "operator": "==",
                 "value": "acf\/block-category"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/block-category-slider"
+            }
         ]
     ],
     "menu_order": 0,
@@ -64,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764857929
+    "modified": 1765302072
 }

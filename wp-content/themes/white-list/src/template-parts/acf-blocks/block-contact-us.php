@@ -11,7 +11,7 @@ $socials = get_field_value($fields, 'socials');
 $form_shortcode = get_field_value($fields, 'form_shortcode');
 ?>
 
-<section class="contact-us">
+<section class="contact-us <?php echo $args['className'] ?? ''; ?>" id="contact-us-block">
 	<div class="container">
 		<div class="contact-us__inner-container">
 			<div class="contact-us__info-wrapper">
