@@ -48,6 +48,9 @@ class WP_Rock_Blocks {
         'block-our-history' => array(
             'title'      => 'Block - Our history',
         ),
+        'block-numbers-facts' => array(
+            'title'      => 'Block - Numbers & Facts',
+        ),
     );
 
     /**
