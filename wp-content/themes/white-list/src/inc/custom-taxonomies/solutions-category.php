@@ -32,7 +32,7 @@ register_taxonomy(
         'show_admin_column' => true,
         'query_var' => true,
         'show_in_rest' => true,
-        'rewrite' => array( 'slug' => 'product-category' ),
+        'rewrite' => array( 'slug' => 'solutions-category' ),
     )
 );
 

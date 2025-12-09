@@ -15,8 +15,7 @@ if ($object instanceof WP_Post) {
 	$banner_image = get_field('banner_image',  $object->ID);
 
 } elseif (is_tax()) {
-
-	$title = $object->term_name;
+	$title = $object->name;
 	$banner_image = get_field('banner_image', 'term_' . $object->term_id);
 
 	if (!$banner_image) {

@@ -43,27 +43,11 @@ $link_button = get_field_value($fields, 'link_button');
 		echo '<div class="swiper-wrapper">';
 
 		foreach ($solutions as $solution_id) {
-			$thumb = get_the_post_thumbnail_url($solution_id);
-			$excerpt = get_the_excerpt($solution_id);
-			$title = get_the_title($solution_id);
+			echo '<div class="swiper-slide">';
 
-			echo '<div class="swiper-slide solutions-block__post-item">';
-
-			if (!empty($thumb)) {
-				echo '<figure class="solutions-block__post-thumb">
-										<img src="' . $thumb . '" alt="post thumbnail">
-								</figure>';
-			}
-
-			if (!empty($title)) {
-				echo '<h3 class="solutions-block__post-title">' . $title . '</h3>';
-			}
-
-			if (!empty($excerpt)) {
-				echo '<p class="solutions-block__post-excerpt">
-										' . $excerpt . '
-								</p>';
-			}
+				echo get_template_part('src/template-parts/solution', 'card', [
+								'post_id' =>  $solution_id
+							]);
 
 			echo '</div>';
 		}

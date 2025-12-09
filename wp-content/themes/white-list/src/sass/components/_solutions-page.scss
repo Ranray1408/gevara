@@ -1,0 +1,33 @@
+.solutions-page {
+
+	.category-page__sidebar {
+		display: none;
+	}
+
+	.category-page__content-container {
+		display: flex;
+	}
+
+	.category-page__products-container-inner {
+		&.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 32px;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 1440px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media screen and (max-width: 768px) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+
+	.solutions-card {
+		&__post-excerpt {
+			margin-top: 0;
+		}
+	}
+}
