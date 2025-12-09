@@ -57,6 +57,9 @@ class WP_Rock_Blocks {
         'block-category-slider' => array(
             'title'      => 'Block - Category slider',
         ),
+        'block-thank-you' => array(
+            'title'      => 'Block - Thank you',
+        ),
     );
 
     /**

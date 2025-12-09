@@ -1,0 +1,32 @@
+.thank-you {
+	background-image: linear-gradient(to right, #469a9e 0%, #5cc17d);
+	padding: 120px 0;
+
+	@media screen and (max-width: 1140px) {
+		padding: 109px 0;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.single-content {
+		margin: 0 auto;
+		max-width: 880px;
+		h1 {
+			font-size: 150px;
+			margin-bottom: 8px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 100px;
+			}
+
+			@media screen and (max-width: 768px) {
+				font-size: 80px;
+			}
+		}
+	}
+}
