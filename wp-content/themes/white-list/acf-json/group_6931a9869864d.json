@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6931a9acfd636",
-            "label": "Background image",
+            "label": "Изображение заднего фона",
             "name": "background_image",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_6931a9a5fd635",
-            "label": "Logo",
+            "label": "Лого",
             "name": "logo",
             "aria-label": "",
             "type": "image",
@@ -54,7 +54,7 @@
         },
         {
             "key": "field_6931a987fd634",
-            "label": "Description",
+            "label": "Описание",
             "name": "description",
             "aria-label": "",
             "type": "textarea",
@@ -91,5 +91,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764863212
+    "modified": 1765359963
 }

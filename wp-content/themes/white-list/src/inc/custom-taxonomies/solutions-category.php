@@ -10,8 +10,8 @@
 
 
 $labels = array(
-    'name'                  => __('Решения', 'white-list'),
-    'singular_name'         => __('Решение', 'white-list'),
+    'name'                  => __('Решения категории', 'white-list'),
+    'singular_name'         => __('Решение категории', 'white-list'),
     'search_items'          => __('Поиск по решениям', 'white-list'),
     'all_items'             => __('Все решения', 'white-list'),
     'parent_item'           => __('Родительская категория решений', 'white-list'),

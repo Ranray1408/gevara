@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6938144565cb5",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_6938145765cb6",
-            "label": "Slides",
+            "label": "Слайды",
             "name": "slides",
             "aria-label": "",
             "type": "repeater",
@@ -46,7 +46,7 @@
             "sub_fields": [
                 {
                     "key": "field_6938169a65cb7",
-                    "label": "Years",
+                    "label": "Год",
                     "name": "years",
                     "aria-label": "",
                     "type": "text",
@@ -67,7 +67,7 @@
                 },
                 {
                     "key": "field_693816ab65cb8",
-                    "label": "Title",
+                    "label": "Заголовок слайда",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -88,7 +88,7 @@
                 },
                 {
                     "key": "field_693816bd65cb9",
-                    "label": "Text",
+                    "label": "Текст слайда",
                     "name": "text",
                     "aria-label": "",
                     "type": "textarea",
@@ -109,7 +109,7 @@
                 },
                 {
                     "key": "field_69381a3f985e5",
-                    "label": "Button text",
+                    "label": "Текст кнопки связанной со слайдом",
                     "name": "button_text",
                     "aria-label": "",
                     "type": "text",
@@ -149,5 +149,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765285145
+    "modified": 1765359806
 }

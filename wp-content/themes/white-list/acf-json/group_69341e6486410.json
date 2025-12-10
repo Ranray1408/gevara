@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69341e65616b4",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_69341e7e616b5",
-            "label": "Logos repeater",
+            "label": "Повторитель лого",
             "name": "logos_repeater",
             "aria-label": "",
             "type": "repeater",
@@ -46,7 +46,7 @@
             "sub_fields": [
                 {
                     "key": "field_69341e99616b6",
-                    "label": "Logo",
+                    "label": "Логотип",
                     "name": "logo",
                     "aria-label": "",
                     "type": "image",
@@ -91,5 +91,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765023857
+    "modified": 1765359857
 }

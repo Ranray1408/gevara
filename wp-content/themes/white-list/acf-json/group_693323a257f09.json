@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_693323a44157b",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_693323b24157c",
-            "label": "Description",
+            "label": "Описание",
             "name": "description",
             "aria-label": "",
             "type": "wysiwyg",
@@ -44,7 +44,7 @@
         },
         {
             "key": "field_693323c84157e",
-            "label": "Socials",
+            "label": "Ссылки социальных сетей",
             "name": "socials",
             "aria-label": "",
             "type": "repeater",
@@ -111,7 +111,7 @@
         },
         {
             "key": "field_6933242b41581",
-            "label": "Form shortcode",
+            "label": "Шордкод формы",
             "name": "form_shortcode",
             "aria-label": "",
             "type": "text",
@@ -148,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764959468
+    "modified": 1765360119
 }

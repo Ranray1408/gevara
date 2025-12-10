@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69386c03d81d0",
-            "label": "Icon",
+            "label": "Иконка",
             "name": "icon",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_69386bedd81cf",
-            "label": "Content",
+            "label": "Контент",
             "name": "content",
             "aria-label": "",
             "type": "wysiwyg",
@@ -49,7 +49,7 @@
         },
         {
             "key": "field_69386c11d81d1",
-            "label": "Back buttons",
+            "label": "Набор кнопок",
             "name": "back_buttons",
             "aria-label": "",
             "type": "repeater",
@@ -107,5 +107,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765305409
+    "modified": 1765359583
 }

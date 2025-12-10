@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_693194ce541b3",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_693194f9541b4",
-            "label": "Categories",
+            "label": "Категории (продукты)",
             "name": "categories",
             "aria-label": "",
             "type": "taxonomy",
@@ -71,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765302072
+    "modified": 1765360166
 }

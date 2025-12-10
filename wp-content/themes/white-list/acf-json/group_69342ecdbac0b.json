@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69342ece0bf29",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "textarea",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_69342ee40bf2a",
-            "label": "Content",
+            "label": "Контент",
             "name": "content",
             "aria-label": "",
             "type": "wysiwyg",
@@ -36,15 +36,15 @@
                 "class": "",
                 "id": ""
             },
+            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "default_value": "",
             "delay": 0
         },
         {
             "key": "field_69342eeb0bf2b",
-            "label": "Image",
+            "label": "Изображение блока",
             "name": "image",
             "aria-label": "",
             "type": "image",
@@ -69,7 +69,7 @@
         },
         {
             "key": "field_69342efe0bf2c",
-            "label": "Contact us btn",
+            "label": "Кнопка \"Связаться с нами\"",
             "name": "contact_us_btn",
             "aria-label": "",
             "type": "link",
@@ -85,7 +85,7 @@
         },
         {
             "key": "field_69342f150bf2d",
-            "label": "Download btn",
+            "label": "Кнопка \"Скачать презентацию\"",
             "name": "download_btn",
             "aria-label": "",
             "type": "link",
@@ -118,5 +118,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765028894
+    "modified": 1765360488
 }

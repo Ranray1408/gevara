@@ -21,7 +21,7 @@
         },
         {
             "key": "field_6930233676caf",
-            "label": "Logo",
+            "label": "Лого",
             "name": "logo",
             "aria-label": "",
             "type": "image",
@@ -46,7 +46,7 @@
         },
         {
             "key": "field_6930235d76cb0",
-            "label": "Phone",
+            "label": "Телефон",
             "name": "phone",
             "aria-label": "",
             "type": "link",
@@ -78,7 +78,7 @@
         },
         {
             "key": "field_6930240176cb3",
-            "label": "Contact us",
+            "label": "Кнопка в Хедере",
             "name": "contact_us",
             "aria-label": "",
             "type": "link",
@@ -111,7 +111,7 @@
         },
         {
             "key": "field_69344edd6a75f",
-            "label": "Footer logo",
+            "label": "Лого в футера",
             "name": "footer_logo",
             "aria-label": "",
             "type": "image",
@@ -136,7 +136,7 @@
         },
         {
             "key": "field_6934437e413db",
-            "label": "Footer note block",
+            "label": "Текст под логотипом",
             "name": "footer_note_block",
             "aria-label": "",
             "type": "wysiwyg",
@@ -156,7 +156,7 @@
         },
         {
             "key": "field_693443fe413dc",
-            "label": "Presintation btn",
+            "label": "Кнопка",
             "name": "presintation_btn",
             "aria-label": "",
             "type": "link",
@@ -172,7 +172,7 @@
         },
         {
             "key": "field_69344436413dd",
-            "label": "Footer developers note",
+            "label": "Блок текста под кнопкой",
             "name": "footer_developers_note",
             "aria-label": "",
             "type": "wysiwyg",
@@ -192,7 +192,7 @@
         },
         {
             "key": "field_6934449900dec",
-            "label": "Footer middle text block",
+            "label": "Блок текста по центру",
             "name": "footer_middle_text_block",
             "aria-label": "",
             "type": "wysiwyg",
@@ -212,7 +212,7 @@
         },
         {
             "key": "field_693444ce00ded",
-            "label": "Footer menu title",
+            "label": "Заголовки меню",
             "name": "footer_menu_title",
             "aria-label": "",
             "type": "text",
@@ -232,7 +232,7 @@
         },
         {
             "key": "field_693444e800dee",
-            "label": "Footer contacts title",
+            "label": "Заголовок блока контакты",
             "name": "footer_contacts_title",
             "aria-label": "",
             "type": "text",
@@ -252,7 +252,7 @@
         },
         {
             "key": "field_6934451d00def",
-            "label": "Footer location",
+            "label": "Блок текста адрсес",
             "name": "footer_location",
             "aria-label": "",
             "type": "text",
@@ -292,7 +292,7 @@
         },
         {
             "key": "field_6934459500df1",
-            "label": "Work schedule",
+            "label": "График роботы",
             "name": "work_schedule",
             "aria-label": "",
             "type": "text",
@@ -312,7 +312,7 @@
         },
         {
             "key": "field_693445e500df2",
-            "label": "Socials list",
+            "label": "Социальные сети",
             "name": "socials_list",
             "aria-label": "",
             "type": "repeater",
@@ -379,7 +379,7 @@
         },
         {
             "key": "field_69345759f1ccd",
-            "label": "Ps text",
+            "label": "Самый нижний текст",
             "name": "ps_text",
             "aria-label": "",
             "type": "wysiwyg",
@@ -416,7 +416,7 @@
         },
         {
             "key": "field_6935bbce238bb",
-            "label": "Download btn text",
+            "label": "Текст кнопки карточки продукта",
             "name": "download_btn_text",
             "aria-label": "",
             "type": "text",
@@ -436,7 +436,7 @@
         },
         {
             "key": "field_693585d2ec303",
-            "label": "Sidebar title",
+            "label": "Заголовок сайдбара",
             "name": "sidebar_title",
             "aria-label": "",
             "type": "text",
@@ -456,7 +456,7 @@
         },
         {
             "key": "field_693585deec304",
-            "label": "Category page text",
+            "label": "Большой текст внизу страницы категорий",
             "name": "category_page_text",
             "aria-label": "",
             "type": "wysiwyg",
@@ -493,7 +493,7 @@
         },
         {
             "key": "field_6935db9beece2",
-            "label": "Aside info",
+            "label": "Иконки белого блока справа на странице продукта",
             "name": "aside_info",
             "aria-label": "",
             "type": "repeater",
@@ -585,7 +585,7 @@
         },
         {
             "key": "field_6935dc18eece6",
-            "label": "Document title",
+            "label": "Заголовок надо кнопкой",
             "name": "document_title",
             "aria-label": "",
             "type": "text",
@@ -605,7 +605,7 @@
         },
         {
             "key": "field_6936c14525df2",
-            "label": "Get order button",
+            "label": "Кнопка \"Сделать заказ\"",
             "name": "get_order_button",
             "aria-label": "",
             "type": "link",
@@ -638,7 +638,7 @@
         },
         {
             "key": "field_6936de57e2d12",
-            "label": "Related products block",
+            "label": "Блок похожие продукты",
             "name": "related_products_block",
             "aria-label": "",
             "type": "group",
@@ -654,7 +654,7 @@
             "sub_fields": [
                 {
                     "key": "field_6936de7ae2d13",
-                    "label": "Title",
+                    "label": "Заголовок",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -674,11 +674,11 @@
                 },
                 {
                     "key": "field_6936efa75a1ce",
-                    "label": "Number of products",
+                    "label": "Количество выводимых продуктов",
                     "name": "number_of_products",
                     "aria-label": "",
                     "type": "number",
-                    "instructions": "",
+                    "instructions": "Оставить пустым если нужно выводить все.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -698,7 +698,7 @@
         },
         {
             "key": "field_6936de85e2d14",
-            "label": "Category slider",
+            "label": "Слайдер каталога продукции",
             "name": "category_slider",
             "aria-label": "",
             "type": "group",
@@ -714,7 +714,7 @@
             "sub_fields": [
                 {
                     "key": "field_6936ded5e2d15",
-                    "label": "Title",
+                    "label": "Заголовок",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -734,7 +734,7 @@
                 },
                 {
                     "key": "field_6936e08b34867",
-                    "label": "Categories",
+                    "label": "Категории",
                     "name": "categories",
                     "aria-label": "",
                     "type": "taxonomy",
@@ -759,7 +759,7 @@
         },
         {
             "key": "field_6936df5b9ffb7",
-            "label": "Advantages block",
+            "label": "Блок преимущества",
             "name": "advantages_block",
             "aria-label": "",
             "type": "group",
@@ -775,7 +775,7 @@
             "sub_fields": [
                 {
                     "key": "field_6936e934c499b",
-                    "label": "Background image",
+                    "label": "Изображение для десктопа",
                     "name": "background_image",
                     "aria-label": "",
                     "type": "image",
@@ -800,7 +800,7 @@
                 },
                 {
                     "key": "field_6936e94fc499c",
-                    "label": "Background image mob",
+                    "label": "Изображение для мобилки",
                     "name": "background_image_mob",
                     "aria-label": "",
                     "type": "image",
@@ -825,7 +825,7 @@
                 },
                 {
                     "key": "field_6936e96dc499d",
-                    "label": "Title",
+                    "label": "Заголовок",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -845,7 +845,7 @@
                 },
                 {
                     "key": "field_6936ebdd95d75",
-                    "label": "Advantages repeater",
+                    "label": "Текстовки в блоке",
                     "name": "advantages_repeater",
                     "aria-label": "",
                     "type": "repeater",
@@ -867,7 +867,7 @@
                     "sub_fields": [
                         {
                             "key": "field_6936ebdd95d76",
-                            "label": "Title",
+                            "label": "Заголовок блока текста",
                             "name": "title",
                             "aria-label": "",
                             "type": "text",
@@ -888,7 +888,7 @@
                         },
                         {
                             "key": "field_6936ebdd95d77",
-                            "label": "Text",
+                            "label": "Описание блока текста",
                             "name": "text",
                             "aria-label": "",
                             "type": "text",
@@ -913,7 +913,7 @@
         },
         {
             "key": "field_6936df779ffb8",
-            "label": "Conacts us",
+            "label": "Блока с формой",
             "name": "conacts_us",
             "aria-label": "",
             "type": "group",
@@ -929,7 +929,7 @@
             "sub_fields": [
                 {
                     "key": "field_6936ea5e1be3b",
-                    "label": "Title",
+                    "label": "Заголовок",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -949,7 +949,7 @@
                 },
                 {
                     "key": "field_6936ea6c1be3c",
-                    "label": "Description",
+                    "label": "Описание",
                     "name": "description",
                     "aria-label": "",
                     "type": "wysiwyg",
@@ -969,7 +969,7 @@
                 },
                 {
                     "key": "field_6936ea761be3d",
-                    "label": "Socials",
+                    "label": "Социальные ссылки",
                     "name": "socials",
                     "aria-label": "",
                     "type": "repeater",
@@ -991,7 +991,7 @@
                     "sub_fields": [
                         {
                             "key": "field_6936ea871be3e",
-                            "label": "Link",
+                            "label": "Ссылка",
                             "name": "link",
                             "aria-label": "",
                             "type": "link",
@@ -1008,7 +1008,7 @@
                         },
                         {
                             "key": "field_6936eaa21be3f",
-                            "label": "Icon",
+                            "label": "Иконка",
                             "name": "icon",
                             "aria-label": "",
                             "type": "image",
@@ -1036,7 +1036,7 @@
                 },
                 {
                     "key": "field_6936eaf2abe82",
-                    "label": "Form shortcode",
+                    "label": "Шордкод формы",
                     "name": "form_shortcode",
                     "aria-label": "",
                     "type": "text",
@@ -1075,7 +1075,7 @@
         },
         {
             "key": "field_6938624c5ec08",
-            "label": "Page 404 content",
+            "label": "Текст страницы 404",
             "name": "page_404_content",
             "aria-label": "",
             "type": "wysiwyg",
@@ -1095,7 +1095,7 @@
         },
         {
             "key": "field_693862ba27db6",
-            "label": "Back buttons",
+            "label": "Кнопки на странице 404",
             "name": "back_buttons",
             "aria-label": "",
             "type": "repeater",
@@ -1153,7 +1153,7 @@
         },
         {
             "key": "field_693881f9b49f1",
-            "label": "Products archive title",
+            "label": "Заголовок архивной страницы \"Каталога\" (Продукты)",
             "name": "products_archive_title",
             "aria-label": "",
             "type": "text",
@@ -1173,7 +1173,7 @@
         },
         {
             "key": "field_6938820ab49f2",
-            "label": "Products archive image",
+            "label": "Изображение архивной страницы \"Каталога\" (Продукты)",
             "name": "products_archive_image",
             "aria-label": "",
             "type": "image",
@@ -1198,7 +1198,7 @@
         },
         {
             "key": "field_69388252b49f3",
-            "label": "Solutions archive title",
+            "label": "Заголовок архивной страницы \"Решения\"",
             "name": "solutions_archive_title",
             "aria-label": "",
             "type": "text",
@@ -1218,7 +1218,7 @@
         },
         {
             "key": "field_6938826cb49f4",
-            "label": "Solutions archive image",
+            "label": "Изображение архивной страницы \"Решения\"",
             "name": "solutions_archive_image",
             "aria-label": "",
             "type": "image",
@@ -1260,5 +1260,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765311136
+    "modified": 1765359301
 }

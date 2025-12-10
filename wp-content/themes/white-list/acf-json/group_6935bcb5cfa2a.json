@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6935bcb6c4ab0",
-            "label": "Pdf file",
+            "label": "Pdf Файл продукта",
             "name": "pdf_file",
             "aria-label": "",
             "type": "file",
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765141551
+    "modified": 1765359387
 }

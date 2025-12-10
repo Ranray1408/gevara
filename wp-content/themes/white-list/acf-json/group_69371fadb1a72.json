@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69371faed768f",
-            "label": "Banner image",
+            "label": "Баннер-изображение",
             "name": "banner_image",
             "aria-label": "",
             "type": "image",
@@ -46,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765220303
+    "modified": 1765359358
 }

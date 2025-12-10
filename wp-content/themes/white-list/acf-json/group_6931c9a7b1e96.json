@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6931c9a896bef",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_6931d11992c98",
-            "label": "Solutions",
+            "label": "Решения (посты)",
             "name": "solutions",
             "aria-label": "",
             "type": "post_object",
@@ -47,7 +47,7 @@
         },
         {
             "key": "field_6931c9bc96bf0",
-            "label": "Link button",
+            "label": "Кнопка в блоке",
             "name": "link_button",
             "aria-label": "",
             "type": "link",
@@ -80,5 +80,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764872638
+    "modified": 1765359643
 }

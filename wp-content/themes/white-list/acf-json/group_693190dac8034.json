@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69348886bfbe1",
-            "label": "Banner image",
+            "label": "Баннер-изображение",
             "name": "banner_image",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_6931910746b2b",
-            "label": "Category image",
+            "label": "Изображение категории \"миниатюра\"",
             "name": "category_image",
             "aria-label": "",
             "type": "image",
@@ -54,7 +54,7 @@
         },
         {
             "key": "field_693190db46b2a",
-            "label": "Icon",
+            "label": "Иконка категории",
             "name": "icon",
             "aria-label": "",
             "type": "image",
@@ -103,5 +103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765219068
+    "modified": 1765359527
 }

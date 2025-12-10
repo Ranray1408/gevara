@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_693839bfa704d",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_693839d6a704e",
-            "label": "Items",
+            "label": "Повторитель текстовок",
             "name": "items",
             "aria-label": "",
             "type": "repeater",
@@ -46,7 +46,7 @@
             "sub_fields": [
                 {
                     "key": "field_693839eaa704f",
-                    "label": "Title",
+                    "label": "Заголовок текстовки",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -67,7 +67,7 @@
                 },
                 {
                     "key": "field_693839f2a7050",
-                    "label": "Text",
+                    "label": "Описание текстовки",
                     "name": "text",
                     "aria-label": "",
                     "type": "textarea",
@@ -80,10 +80,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "new_lines": "",
                     "maxlength": "",
-                    "placeholder": "",
                     "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
                     "parent_repeater": "field_693839d6a704e"
                 }
             ]
@@ -107,5 +107,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765292709
+    "modified": 1765359916
 }

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_693844b7d3602",
-            "label": "Image1",
+            "label": "Верхнее изображение",
             "name": "image1",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_693844e8d3603",
-            "label": "Items",
+            "label": "Текстовки с номерами",
             "name": "items",
             "aria-label": "",
             "type": "repeater",
@@ -51,7 +51,7 @@
             "sub_fields": [
                 {
                     "key": "field_693844f6d3604",
-                    "label": "Title",
+                    "label": "Заголовок текстовки",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -72,7 +72,7 @@
                 },
                 {
                     "key": "field_69384502d3605",
-                    "label": "Text",
+                    "label": "Описание текстовки",
                     "name": "text",
                     "aria-label": "",
                     "type": "text",
@@ -95,7 +95,7 @@
         },
         {
             "key": "field_693845448b8c6",
-            "label": "Image2",
+            "label": "Изображение внизу",
             "name": "image2",
             "aria-label": "",
             "type": "image",
@@ -120,7 +120,7 @@
         },
         {
             "key": "field_693845538b8c7",
-            "label": "Content",
+            "label": "Контент возле нижнего изображения",
             "name": "content",
             "aria-label": "",
             "type": "wysiwyg",
@@ -140,7 +140,7 @@
         },
         {
             "key": "field_69384591256be",
-            "label": "Bottom title",
+            "label": "Нижний заголовок",
             "name": "bottom_title",
             "aria-label": "",
             "type": "text",
@@ -160,7 +160,7 @@
         },
         {
             "key": "field_693845c2256bf",
-            "label": "Bottom text",
+            "label": "Нижний подзаголовок",
             "name": "bottom_text",
             "aria-label": "",
             "type": "textarea",
@@ -173,10 +173,10 @@
                 "id": ""
             },
             "default_value": "",
-            "new_lines": "",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "rows": ""
+            "new_lines": ""
         }
     ],
     "location": [
@@ -197,5 +197,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765297188
+    "modified": 1765360320
 }

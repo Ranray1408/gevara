@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69315166e729e",
-            "label": "Background image",
+            "label": "Изображение заднего фона",
             "name": "background_image",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_69315057085a7",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -49,7 +49,7 @@
         },
         {
             "key": "field_69315082085a8",
-            "label": "Description",
+            "label": "Описание",
             "name": "description",
             "aria-label": "",
             "type": "textarea",
@@ -69,7 +69,7 @@
         },
         {
             "key": "field_693150a3085a9",
-            "label": "Catalog button",
+            "label": "Ссылка на каталог",
             "name": "catalog_button",
             "aria-label": "",
             "type": "link",
@@ -85,7 +85,7 @@
         },
         {
             "key": "field_693150bb085aa",
-            "label": "Contact us button",
+            "label": "Кнопка \"Связатся с нами\"",
             "name": "contact_us_button",
             "aria-label": "",
             "type": "link",
@@ -101,7 +101,7 @@
         },
         {
             "key": "field_693150d8085ab",
-            "label": "Download button",
+            "label": "Кнопка \"Скачать презентацию\"",
             "name": "download_button",
             "aria-label": "",
             "type": "link",
@@ -134,5 +134,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764840895
+    "modified": 1765360050
 }

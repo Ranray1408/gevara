@@ -7,8 +7,8 @@
  */
 
 $labels = array(
-    'name'                  => __( 'Каталог', 'white-list' ),
-    'singular_name'         => __( 'Продукт', 'white-list' ),
+    'name'                  => __( 'Каталог категории', 'white-list' ),
+    'singular_name'         => __( 'Продукт категории', 'white-list' ),
     'search_items'          => __( 'Поиск по каталогу', 'white-list' ),
     'all_items'             => __( 'Все продукты', 'white-list' ),
     'parent_item'           => __( 'Родительская категория', 'white-list' ),

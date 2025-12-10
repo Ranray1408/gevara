@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6931764dcc4d3",
-            "label": "Background image",
+            "label": "Изображение для десктопа",
             "name": "background_image",
             "aria-label": "",
             "type": "image",
@@ -29,7 +29,7 @@
         },
         {
             "key": "field_693180cac1925",
-            "label": "Background image mob",
+            "label": "Изображение для мобилки",
             "name": "background_image_mob",
             "aria-label": "",
             "type": "image",
@@ -54,7 +54,7 @@
         },
         {
             "key": "field_693175d5a91ca",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -74,7 +74,7 @@
         },
         {
             "key": "field_693175e2a91cb",
-            "label": "Advantages repeater",
+            "label": "Повторитель текстовок",
             "name": "advantages_repeater",
             "aria-label": "",
             "type": "repeater",
@@ -96,7 +96,7 @@
             "sub_fields": [
                 {
                     "key": "field_69317602a91cc",
-                    "label": "Title",
+                    "label": "Заголовок текстовки",
                     "name": "title",
                     "aria-label": "",
                     "type": "text",
@@ -117,7 +117,7 @@
                 },
                 {
                     "key": "field_6931760ea91cd",
-                    "label": "Text",
+                    "label": "Описание текстовки",
                     "name": "text",
                     "aria-label": "",
                     "type": "text",
@@ -157,5 +157,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765207031
+    "modified": 1765360399
 }

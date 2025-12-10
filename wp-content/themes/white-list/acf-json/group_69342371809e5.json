@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_69342371cd64e",
-            "label": "Title",
+            "label": "Заголовок",
             "name": "title",
             "aria-label": "",
             "type": "text",
@@ -24,7 +24,7 @@
         },
         {
             "key": "field_69342380cd64f",
-            "label": "Reviews repeater",
+            "label": "Повторитель отзывов",
             "name": "reviews_repeater",
             "aria-label": "",
             "type": "repeater",
@@ -46,7 +46,7 @@
             "sub_fields": [
                 {
                     "key": "field_69342392cd650",
-                    "label": "Logo",
+                    "label": "Лого компании",
                     "name": "logo",
                     "aria-label": "",
                     "type": "image",
@@ -72,7 +72,7 @@
                 },
                 {
                     "key": "field_693423a7cd651",
-                    "label": "Company name",
+                    "label": "Имя компании",
                     "name": "company_name",
                     "aria-label": "",
                     "type": "text",
@@ -93,7 +93,7 @@
                 },
                 {
                     "key": "field_693423bacd652",
-                    "label": "Position",
+                    "label": "Должность",
                     "name": "position",
                     "aria-label": "",
                     "type": "text",
@@ -114,7 +114,7 @@
                 },
                 {
                     "key": "field_693423c2cd653",
-                    "label": "Review text",
+                    "label": "Текст отзыва",
                     "name": "review_text",
                     "aria-label": "",
                     "type": "textarea",
@@ -154,5 +154,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1765025911
+    "modified": 1765359735
 }
