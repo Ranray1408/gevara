@@ -65,7 +65,6 @@ export const initRelatedSlider = () => {
 
 	const swiper = new Swiper(related, {
 		slidesPerView: 2,
-		modules: [Navigation],
 		breakpoints: {
 			// when window width is >= 320px
 			768: {
@@ -77,11 +76,7 @@ export const initRelatedSlider = () => {
 				spaceBetween: 32,
 			}
 		},
-		// Navigation arrows
-		navigation: {
-			nextEl: '.js-category-slider-next',
-			prevEl: '.js-category-slider-prev',
-		},
+
 	});
 }
 export const initCategorySlider = () => {
@@ -92,6 +87,7 @@ export const initCategorySlider = () => {
 	const swiper = new Swiper(category, {
 		slidesPerView: 2.3,
 		spaceBetween: 8,
+		modules: [Navigation],
 		breakpoints: {
 			// when window width is >= 320px
 			768: {
@@ -100,6 +96,11 @@ export const initCategorySlider = () => {
 			1450: {
 				slidesPerView: 4.5,
 			}
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.js-category-slider-next',
+			prevEl: '.js-category-slider-prev',
 		},
 	});
 }
@@ -134,7 +135,7 @@ export const initHistorySlider = () => {
 	// buttons slider
 	const btnsSwiper = new Swiper(sliderBtns, {
 		slidesPerView: 'auto',
-		spaceBetween: 16	,
+		spaceBetween: 16,
 		modules: [Controller],
 		freeMode: true,
 

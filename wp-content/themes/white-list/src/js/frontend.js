@@ -24,7 +24,9 @@ const onLoad = () => {
 	initHistorySlider();
 
 	document.addEventListener('wpcf7mailsent', function (event) {
-		window.location.href = php_vars.site_url + '/thank-you';
+		setTimeout(() => {
+			window.location.href = php_vars.site_url + '/thank-you';
+		}, 2000)
 	}, false);
 
 };
