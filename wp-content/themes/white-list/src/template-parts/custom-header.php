@@ -88,7 +88,7 @@ $contact_url = get_field_value($contact_us, 'url');
                 }
 
                 if ($contact_title && $contact_url) {
-                    echo '<a href="' . $contact_url . '" class="header__contact_us primary-btn mob">
+                    echo '<a href="' . $contact_url . '" class="header__contact_us primary-btn mob js-open-popup-activator">
                             ' . $contact_title . '
                         </a>';
                 }
@@ -120,7 +120,7 @@ $contact_url = get_field_value($contact_us, 'url');
                 }
 
                 if ($contact_title && $contact_url) {
-                    echo '<a href="' . $contact_url . '" class="header__contact_us primary-btn">
+                    echo '<a href="' . $contact_url . '" class="header__contact_us primary-btn js-open-popup-activator">
                             ' . $contact_title . '
                         </a>';
                 }

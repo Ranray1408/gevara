@@ -9,7 +9,7 @@ $reviews_repeater = get_field_value($fields, 'reviews_repeater');
 ?>
 
 <div class="reviews">
-	<div class="small-container">
+	<div class="container">
 		<div class="reviews__title-wrapper">
 			<?php
 			if (!empty($title)) {

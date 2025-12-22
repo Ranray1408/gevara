@@ -10,7 +10,7 @@ $link_button = get_field_value($fields, 'link_button');
 ?>
 
 <div class="solutions-block">
-	<div class="small-container">
+	<div class="container">
 		<div class="solutions-block__title-wrapper">
 			<?php
 			if (!empty($title)) {
