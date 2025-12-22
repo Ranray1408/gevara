@@ -63,6 +63,9 @@ class WP_Rock_Blocks {
         'block-sitemap' => array(
             'title'      => 'Block - Sitemap',
         ),
+        'block-content' => array(
+            'title'      => 'Block - Content',
+        ),
     );
 
     /**
