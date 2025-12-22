@@ -24,6 +24,9 @@ $phone = get_field_value($global_options, 'phone');
 $socials_list = get_field_value($global_options, 'socials_list');
 
 $ps_text = get_field_value($global_options, 'ps_text');
+
+
+$popup_form_shortcode = get_field_value($global_options, 'popup_form_shortcode');
 ?>
 
 <footer class="footer">
@@ -150,3 +153,8 @@ $ps_text = get_field_value($global_options, 'ps_text');
         </div>
     </div>
 </footer>
+
+<?php
+
+echo do_shortcode('[popup_box box_id="popup-form-shorcode"]' . do_shortcode($popup_form_shortcode) . '[/popup_box]');
+?>

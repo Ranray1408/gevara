@@ -98,7 +98,7 @@ if ($pdf_file) {
 				$get_order_button_url = get_field_value($get_order_button, 'url');
 
 				if (!empty($get_order_button_title) && !empty($get_order_button_url)) {
-					echo '<a href="' . $get_order_button_url . '" class="single-product__get-order primary-btn">
+					echo '<a href="' . $get_order_button_url . '" class="single-product__get-order primary-btn js-open-popup-activator">
 							' . $get_order_button_title . '
 							</a>';
 				}

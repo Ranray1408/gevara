@@ -11,6 +11,7 @@ const onLoad = () => {
 	const popup = new Popup();
 
 	new FormValidator('.wpcf7-form');
+	new FormValidator('#popup-form-shorcode .wpcf7-form');
 
 	popup.init();
 

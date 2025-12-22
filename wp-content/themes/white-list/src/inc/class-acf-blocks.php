@@ -60,6 +60,9 @@ class WP_Rock_Blocks {
         'block-thank-you' => array(
             'title'      => 'Block - Thank you',
         ),
+        'block-sitemap' => array(
+            'title'      => 'Block - Sitemap',
+        ),
     );
 
     /**
