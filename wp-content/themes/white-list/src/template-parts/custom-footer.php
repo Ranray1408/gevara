@@ -27,6 +27,7 @@ $ps_text = get_field_value($global_options, 'ps_text');
 
 
 $popup_form_shortcode = get_field_value($global_options, 'popup_form_shortcode');
+$contact_us_shortcode = get_field_value($global_options, 'contact_us_shortcode');
 ?>
 
 <footer class="footer">
@@ -157,4 +158,5 @@ $popup_form_shortcode = get_field_value($global_options, 'popup_form_shortcode')
 <?php
 
 echo do_shortcode('[popup_box box_id="popup-form-shorcode"]' . do_shortcode($popup_form_shortcode) . '[/popup_box]');
+echo do_shortcode('[popup_box box_id="popup-contact-us-form-shorcode"]' . do_shortcode($contact_us_shortcode) . '[/popup_box]');
 ?>

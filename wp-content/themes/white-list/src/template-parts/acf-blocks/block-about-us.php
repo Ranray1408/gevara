@@ -60,7 +60,7 @@ $download_svg = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 				$contact_us_url = get_field_value($contact_us_btn, 'url');
 
 				if (!empty($contact_us_title) && !empty($contact_us_url)) {
-					echo '<a href="' . $contact_us_url . '" class="about-us__contact-us-btn with-icon primary-btn">
+					echo '<a href="' . $contact_us_url . '" class="about-us__contact-us-btn with-icon primary-btn js-open-popup-activator">
 								' . $phone_svg . '
 								' . $contact_us_title . '
 						</a>';

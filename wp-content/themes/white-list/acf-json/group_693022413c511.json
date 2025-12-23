@@ -1277,6 +1277,26 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_694a83bc935cc",
+            "label": "Cвязаться с нами shortcode",
+            "name": "contact_us_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -1297,5 +1317,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1766415154
+    "modified": 1766491499
 }
