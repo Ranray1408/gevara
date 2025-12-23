@@ -39,11 +39,11 @@ if ($pdf_file) {
 			}
 
 
+			echo '<div class="single-product__content">';
 			if (!empty($content)) {
-				echo '<div class="single-product__content">';
 				echo apply_filters('the_content', $content);
-				echo '</div>';
 			}
+			echo '</div>';
 
 			?>
 
