@@ -4,7 +4,12 @@ get_header();
 
 global $global_options;
 
-$category_page_text = get_field_value($global_options, 'category_page_text');
+$category_page_text = get_field('content_text', 'term_' . get_queried_object_id());
+
+if(empty($category_page_text)) {
+	$category_page_text = get_field_value($global_options, 'category_page_text');
+}
+
 ?>
 
 <div class="category-page">

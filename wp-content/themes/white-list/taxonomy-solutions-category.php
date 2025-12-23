@@ -1,10 +1,6 @@
 <?php
 
 get_header();
-
-global $global_options;
-
-$category_page_text = get_field_value($global_options, 'category_page_text');
 ?>
 
 <div class="category-page solutions-page">
